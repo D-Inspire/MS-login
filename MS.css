@@ -1,0 +1,248 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue",
+    "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi",
+    "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga",
+    "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee",
+    "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+body {
+  /* background-color: rgba(128, 128, 128,0.3); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #eaddd8 10%, #d5e0e8 60%, #eae7d5);
+}
+body > div:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 5% 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  position: relative;
+}
+body > div:nth-of-type(1) > img {
+  width: 104px;
+  height: 25px;
+}
+#message1{
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B1B1B;
+    line-height: 1.6em;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+#message1>img{
+    border-radius: 50%;
+}
+#message1>img:hover{
+    background-color: #CCCCCC;
+}
+#p {
+   font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    color: #1B1B1B;
+    line-height: 1.16em;
+letter-spacing: 0em;
+}
+#error{
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+#error>a{
+    text-decoration: none;
+    font-size: 15px;
+    color: blue;
+}
+#error>a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+#NumSpan{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#NumSpan>label div{
+    width: 80px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#NumSpan>label div b{
+    rotate: 90deg;
+}
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B1B1B;
+    line-height: 1.33em;
+    letter-spacing: 0em;
+}
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border-bottom-color: blue;
+}
+input[type="password"]:hover,
+input[type="text"]:hover,
+input[type="email"]:hover{
+    border-bottom-color: black;
+}
+body > div:nth-of-type(2)>a,
+#sign,
+#access,
+#create{
+    font-size: 12px;
+    width: fit-content;
+}
+#sign,
+body > div:nth-of-type(2)>a,
+#access,
+#create>a{
+    font-size: 13px;
+    color: blue;
+    text-decoration: none;
+}
+#sign:hover,
+#access:hover,
+#create>a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+div[class="btn"]{
+    display: flex;
+    font-size: 17px;
+    justify-content: flex-end;
+    gap: 7px;
+}
+div[class="btn"]>a input,
+div[class="btn"]>input{
+    width: 110px;
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+div[class="btn"]>input:nth-of-type(1){
+    background-color: rgba(128, 128, 128,0.4);
+}
+div[class="btn"]>input:nth-of-type(1):hover{
+    background-color: rgba(128, 128, 128,0.6);
+}
+div[class="btn"]>a input{
+    background-color: #005DA6;
+    color: white;
+}
+button{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 30px;
+    height: 50px;
+    width: 76%;
+    position: absolute;
+    left: 12%;
+    bottom: 20%;
+    border: 1px solid rgba(0, 0, 0,0.4);
+    color: rgba(0, 0, 0,0.85);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+button>img{
+    width: 32px;
+}
+button>span{
+    font-size: 15px;
+    
+}
+
+body > div:nth-of-type(2){
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+body > div:nth-of-type(2)>a{
+    letter-spacing: 0.5px;
+    color: grey;
+    font-size: 12px;
+}
+body > div:nth-of-type(2)>a:hover{
+    text-decoration: underline;
+}
+body > div:nth-of-type(2)>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+    body > div:nth-of-type(1){
+        width: 440px;
+        height: fit-content;
+        padding: 45px;
+        justify-self: center;
+        gap: 15px;
+        box-shadow: 0.5px 0.5px 5px rgba(128, 128, 128,0.3),-0.5px -0.5px 5px rgba(128, 128, 128,0.3);
+    }  
+    button{
+        bottom: -70px;
+        left: 0;
+        width: 100%;
+        border: none;
+        box-shadow: 0.5px 0.5px 5px rgba(128, 128, 128,0.3),-0.5px -0.5px 5px rgba(128, 128, 128,0.3);
+    } 
+    body > div:nth-of-type(2){
+        left: 100%;
+        transform: translateX(-110%);
+        flex-wrap: nowrap;
+    }
+    body > div:nth-of-type(2)>a{
+        white-space: nowrap;
+        color: black;
+    }
+}

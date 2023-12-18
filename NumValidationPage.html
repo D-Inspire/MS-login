@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Verification</title>
+    <link rel="icon" href="./Images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="MS.css" />
+    <style>
+      #error{
+        display: block;
+        color: black;
+        opacity: 0.9;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-weight: 400;
+      }
+      #country{
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        color: #1B1B1B;
+        line-height: 1.33em;
+        letter-spacing: 0em;
+      }
+      #check:focus + label #country{
+        background-color: #EEEEEE;
+      }
+      #check{display: none;  transform: translateX(calc(-100% + -10px));}
+      #email{
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        color: #1B1B1B;
+        line-height: 1.33em;
+        letter-spacing: 0em;
+
+      }
+      input[type='button']{
+        color: #1B1B1B;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.33em;
+        letter-spacing: 0em;
+      }
+      input[id='next']{
+        background-color: #005DA6;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./Images/Microsoft_logo.svg" alt="Microsoft image logo" />
+      <h1 id="p">Confirm your phone number</h1>
+        <p id="error">We need your help to look up an account with this username
+        </p>
+      <div id="NumSpan">
+        <input type="checkbox" id="check">
+        <label for="check">
+          <div id="country">
+            <span>
+            +1
+          </span>
+          <b>></b>
+          </div>
+        </label>
+        <input
+          type="text"
+          id="email"
+          autofocus
+        />
+      </div>
+      <a href="" id="sign">Sign in with a different usernsme instead</a>
+      <a href="./EmailVerification.html" id="access">Create a new account</a>
+      <div class="btn">
+        <input type="button" value="Back" />
+        <input type="button" value="Next" id="next" />
+      </div>
+    </div>
+    <div>
+      <a href="">Terms of use</a>
+      <a href="">Privacy & cookies</a>
+      <span>...</span>
+    </div>
+
+    <script>
+      const num = document.querySelector("#email");
+      const userEmail = localStorage.getItem("email");
+      num.value = userEmail;
+
+    </script>
+  </body>
+</html>

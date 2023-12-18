@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign into your account</title>
+    <link rel="icon" href="./Images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="MS.css" />
+  </head>
+  <body>
+    <div>
+      <img src="./Images/Microsoft_logo.svg" alt="Microsoft image logo" />
+      <h1 id="p">Sign in</h1>
+      <div>
+        <p id="error">
+          We coulden't find an account with that username. Try another, or
+          <a href="">get a new Microsoft account</a>.
+        </p>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email, phone, or Skype"
+          autofocus
+        />
+      </div>
+      <p id="create">No account? <a href="">Create one!</a></p>
+      <a href="" id="access">Cant access your account?</a>
+      <div class="btn">
+        <input type="button" value="Back" />
+        <a href=""><input type="button" value="Next" id="next" class="nextMain" /></a>
+      </div>
+      <button>
+        <img src="./Images/checkOption.svg" alt="key icon" />
+        <span>Sign-in options</span>
+      </button>
+    </div>
+    <div>
+      <a href="">Terms of use</a>
+      <a href="">Privacy & cookies</a>
+      <span>...</span>
+    </div>
+
+    <script src="./LogIn.js"></script>
+  </body>
+</html>
